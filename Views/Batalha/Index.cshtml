@@ -1,0 +1,22 @@
+﻿@model IEnumerable<string>
+
+<h1>Batalha</h1>
+<br />
+<p>Treinador:</p>
+<p>@ViewData["Treinador"]</p>
+<br />
+<br />
+<p>Digimon:</p>
+<p>@ViewData["Digimon"]</p>
+<br />
+<br />
+<p>Prontos para lutar no mapa: @ViewData["Mapa"]</p>
+<form method="post">
+    <label for="acao">Escolha uma ação:</label>
+    <select id="acao" name="acao">
+        <option value="atacar">Atacar</option>
+        <option value="defender">Defender</option>
+    </select>
+    <input type="submit" value="Enviar" />
+</form>
+
